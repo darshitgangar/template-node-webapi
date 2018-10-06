@@ -1,0 +1,31 @@
+{
+  "name": "template-node-webapi",
+  "version": "1.0.0",
+  "description": "template for creating a standard web api using node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start-dev": "node -r dotenv/config index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darshitgangar/template-node-webapi.git"
+  },
+  "engines": {
+    "node": "~0.10.0 || >=8.0.0"
+  },
+  "engineStrict": true,
+  "author": "Darshit Gangar",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/darshitgangar/template-node-webapi/issues"
+  },
+  "homepage": "https://github.com/darshitgangar/template-node-webapi#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "multer": "^1.4.0"
+  }
+}
