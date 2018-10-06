@@ -4,7 +4,7 @@
 # template-node-webapi
 This is a template to setup node JS based web api.
 
-In this template we are using Express JS npm module to serve HTTP requests.
+In this template we are using [Express JS](https://www.npmjs.com/package/express) npm module to serve HTTP requests.
 
 Additional npm modules:
 1. [dotenv](https://www.npmjs.com/package/dotenv) - to setup environment variables when testing locally
@@ -14,7 +14,7 @@ Additional npm modules:
 # Setup
 1. Clone the repo
 2. Install npm packages `npm install`
-3. Create and setup .env file refering to the .env.example file
+3. Create and setup *.env* file refering to the *.env.example* file
 4. Test web api locally with default environment variables `npm run start-dev`
 5. Run web api `npm start`
 
