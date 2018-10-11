@@ -1,3 +1,8 @@
+/**
+ * @fileoverview Verify and load configurations
+ * @author Darshit Gangar
+ */
+
 // list of required environment variables
 const environmentVariables = ['NODE_ENV', 'PORT'];
 
