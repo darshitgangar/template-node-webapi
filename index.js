@@ -1,3 +1,8 @@
+/**
+ * @fileoverview Initialize and start the application using Express JS
+ * @author Darshit Gangar
+ */
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const multer = require('multer');
