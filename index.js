@@ -10,6 +10,11 @@ const multer = require('multer');
 // load configurations
 const config = require('./server/config/config');
 
+// load MyController
+const MyController = require('./server/controller/myController');
+
+const myController = new MyController();
+
 const apiPort = config.port;
 const app = express();
 const upload = multer();
@@ -29,6 +34,11 @@ app.use(upload.none());
 app.get('/', (req, res) => res.send('Hello, World!'));
 
 app.post('/', (req, res) => res.send(`Hello, ${req.body.username}!`));
+
+// route: /value
+app.get('/value', (req, res) => myController.getValue(req, res));
+
+app.post('/value', (req, res) => myController.setValue(req, res));
 
 // Start the web server for listening to api calls
 app.listen(apiPort, () => {
